@@ -9,7 +9,7 @@ class Window(QMainWindow):
     def __init__(self):
         super(Window, self).__init__()
 
-        self.setWindowTitle("ворд но бджет 2 копейки")
+        self.setWindowTitle("ворд но бюджет 2 копейки")
         self.setGeometry(300, 250, 350, 200)
 
         self.textEdit = QtWidgets.QTextEdit(self)
