@@ -6,6 +6,8 @@ import sys
 
 
 class Window(QMainWindow):
+
+
     def __init__(self):
         super(Window, self).__init__()
 
@@ -15,43 +17,49 @@ class Window(QMainWindow):
         self.textEdit = QtWidgets.QTextEdit(self)
         self.setCentralWidget(self.textEdit)
 
-        self.createMenuBar()
+        self.create_menu_bar()
 
-    def createMenuBar(self):
+    def create_menu_bar(self):
         self.menuBar = QMenuBar(self)
         self.setMenuBar(self.menuBar)
 
         fileMenu = QMenu("&Файл", self)
         self.menuBar.addMenu(fileMenu)
 
-        fileMenu.addAction("Открыть", self.actionClicked)
-        fileMenu.addAction("Сохранить", self.actionClicked)
+        fileMenu.addAction("Открыть", self.action_clicked)
+        fileMenu.addAction("Сохранить", self.action_clicked)
 
     @QtCore.pyqtSlot()
-    def actionClicked(self):
+
+    def action_clicked(self):
             action = self.sender()
+
             if action.text() == "Открыть":
                 fname = QFileDialog.getOpenFileName(self)[0]
+
                 try:
                     f = open(fname, "r")
                     with f:
                         data = f.read()
                         self.textEdit.setText(data)
-                    f.close( )
+                    f.close()
+                    
                 except FileNotFoundError:
                     print("no such file ")
 
             elif action.text() == "Сохранить":
                 fname = QFileDialog.getSaveFileName(self)[0]
+
                 try:
                     f = open(fname, "w")
                     text = self.textEdit.toPlainText()
                     f.write(text)
                     f.close()
+
                 except FileNotFoundError:
                     print("no such file ")
 
-def  application():
+def application():
     app = QApplication(sys.argv)
     window = Window()
 
