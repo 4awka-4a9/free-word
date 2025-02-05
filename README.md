@@ -9,4 +9,4 @@
 
 [MacOs Download](https://media.githubusercontent.com/media/4awka-4a9/free-word/main/dist/.text%20editor.dmg.icloud "MacOs Download")
 
-[Windows Download](https://raw.githubusercontent.com/4awka-4a9/free-word/main/dist/text%20editor/text%20editor "Windows Download")
+[Windows Download](https://media.githubusercontent.com/media/4awka-4a9/free-word/main/dist/text%20editor/text%20editor.exe "Windows Download")
