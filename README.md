@@ -7,6 +7,6 @@
 
 ![скриншот программы](/image.png)
 
-[MacOs Download](https://media.githubusercontent.com/media/4awka-4a9/free-word/main/dist/.text%20editor.dmg.icloud "MacOs Download")
+[MacOs Download](https://media.githubusercontent.com/media/4awka-4a9/free-word/main/dist/text%20editor.dmg "MacOs Download")
 
 [Windows Download](https://media.githubusercontent.com/media/4awka-4a9/free-word/main/dist/text%20editor/text%20editor.exe "Windows Download")
