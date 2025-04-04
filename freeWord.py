@@ -49,6 +49,11 @@ class DonateWindow(QtWidgets.QDialog):
         self.USDTEcopy.setText("0xc3006CD922641337053BfB34a919299754002Fa6")
         self.USDTEcopy.setReadOnly(True)
 
+        self.githubLink = QLabel(self)
+        self.githubLink.setGeometry(125, 250, 40, 20)
+        self.githubLink.setText("<a href=\"https://github.com/4awka-4a9/weather.git\">github</a>")
+        self.githubLink.setOpenExternalLinks(True)
+
 
 class Window(QMainWindow):
 
